@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="index.js"></script>
+    <title>Super Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mainHeading">Регистрация на сайте</h1>
+        <main>
+            <div class="form">
+                <form>
+                    <label for="name">Введите свое имя<sup>*</sup></label>
+                    <input class="name" id="name" type="text" placeholder="Иван" required>
+
+                    <label for="secondName">Введите свою фамилию<sup>*</sup></label>
+                    <input class="secondName" id="secondName" type="text" placeholder="Иванов" required>
+
+                    <label for="email">Введите ваш email<sup>*</sup></label>
+                    <input required type="email" class="email" id="email" placeholder="ivan_ivanov@mail.ru">
+                    
+                    <label for="age">Введите ваш возраст</label>
+                    <input type="text" class="age" id="age" placeholder="25">
+                    
+                    <label for="job">Ваше место работы</label>
+                    <input type="text" class="job" id="job">
+
+                    <button class="btn">Отправить</button>
+                </form>
+                <button class="btn clear">Очистить localStorage</button>
+            </div>
+
+            <div class="mainUsers">
+                Зарегистрированные пользователи
+                <div class="users"></div>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>
